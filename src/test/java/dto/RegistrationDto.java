@@ -1,6 +1,9 @@
 package dto;
+import lombok.Value;
 
+@Value
 public class RegistrationDto {
+
     String login;
     String password;
     String status;
@@ -10,7 +13,6 @@ public class RegistrationDto {
         this.password = password;
         this.status = status;
     }
-
     public String getLogin() {
         return login;
     }
